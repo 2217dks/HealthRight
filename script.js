@@ -1,0 +1,1 @@
+console.log("Hello, People. This is the HealthRight Capstone Project")
