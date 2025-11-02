@@ -1,0 +1,20 @@
+body {
+    margin: 0px;
+    background-color: #ded8d2;
+    font-family: Fira Sans;
+}
+.navbar {
+    background-color: #b0c4b1; /* Dark background */
+    overflow: hidden; /* Clear floats if you used them, good practice */
+    display: flex; /* Key to using Flexbox for alignment */
+    justify-content: space-between;  /* Pushes the logo to one side and links to the other */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px;
+}
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
