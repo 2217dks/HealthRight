@@ -4,11 +4,11 @@ body {
     font-family: Fira Sans;
 }
 .navbar {
-    background-color: #b0c4b1; /* Dark background */
-    overflow: hidden; /* Clear floats if you used them, good practice */
-    display: flex; /* Key to using Flexbox for alignment */
-    justify-content: space-between;  /* Pushes the logo to one side and links to the other */
-    align-items: center; /* Vertically center items */
+    background-color: #b0c4b1; 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
 }
 .navbar-links {
@@ -17,4 +17,23 @@ body {
     padding: 0;
     display: flex;
     gap: 20px;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    margin-left: 20px;
+    flex-grow: 1;
+}
+@media screen and (min-width: 500px){
+    main{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-grow: 1;
+    }
 }
