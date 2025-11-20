@@ -2,18 +2,35 @@
     margin: 0;
     padding: 0;
     font-family: Fira Sans, Arial, Helvetica, sans-serif;
+    background-color: #fff9e5;
+}
+header{
+    background-color: #fff9e5;
+    position: sticky;
+    top: 0;
+    padding: 0 0 10px;
+}
+.button{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: #5fa141;
+    border-radius: 1.2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
     background-color: #fff9e5;
     width: 100%;
 }
 .navbar img{
-    height: 60px;
+    height: 50px;
     padding: 10px;
 }
 .navbar a{
@@ -22,155 +39,166 @@
 }
 .navbar-links{
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 1.2rem;
     align-items: center;
-    gap: 50px;
-    font-size: 1.4rem;
     list-style-type: none;
 }
-.button{
-    padding: 12px 20px;
-    box-sizing: border-box;
-    background-color: #5fa141;
-    border-radius: 1.2rem;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
-    cursor: pointer;
+.sections{
+    padding: 25px 20px;
 }
-.sign-btn{
-    border: 2px solid #407428;
-    padding: 8px 20px;
+.sections h2{
+    font-size: 2rem;
 }
-.sign-btn a{
-    color: white;
+.hero {
+    padding: 50px 20px;
 }
-body{
-    background-color: #00061a;
+.hero *{
+    margin: 0 0 20px;
 }
-header{
-    background-color: #fff9e5;
-    position: sticky;
-    top: 0;
-}
-main{
-    background-color: #fff9e5;
-}
-footer{
-    position: relative;
-    bottom: 0;
-    background-color: #00061a;
-    padding: 40px 0 40px;
-}
-footer *{
-    color: white;
-}
-.center-margin{
-
-    padding: 0 200px 00px;
-}
-.hero{
-    margin-bottom: 200px;
+.hero button{
+    font-size: 1rem;
 }
 .hero-heading{
-    padding: 140px 0 36px;
-    font-size: 96px;
+    font-size: 2.5rem;
 }
 .hero-para{
-    font-size: 36px;
-    margin: 36px 0 36px;
-}
-.plans-btn{
-    border-radius: 25px;
-    background-color: #2a7b04;
-    border: 0;
+    font-size: 18px;
 }
 .data{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    margin: 40px 100px;
 }
-.data-text{
+.sec1 p{
+    font-size: 18px;
+    padding: 20px 0;
+}
+.data p{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    padding: 20px;
     background-color: #fffcee;
     border: 2px solid #ffe696;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
     box-sizing: border-box;
-    transition: 0.15s;
 }
-.data-text:hover{
-    transform: scaleY(1.1);
-    box-shadow: 0 0 10px -2px #5fa141;
-}
-.sections h2{
-    font-size: 48px;
-    margin: 20px 0 20px;
-}
-.sections p{
-    font-size: 26px;
-}
-.sections ul{
+.sec2 ul{
     display: flex;
     flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+    padding: 20px;
     gap: 20px;
-    font-size: 26px;
-    margin: 20px 40px 20px;
+    list-style-type: "✓ "
 }
 .testimonial-head{
     text-align: center;
-    padding: 40px 0 0;
 }
-.testimonial{
+.testimonial-data{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 40px;
+    gap: 20px;
     text-align: center;
     flex-grow: 1;
-    padding: 50px;
+    margin-top: 20px;
+    padding: 0 20px 20px;
 }
-.testimonial p{
+.testimonial-data p{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    min-width: 300px;
-    width: 450px;
+    width: 60%;
+    padding: 10px 10px 20px;
     background-color: #fffcee;
     border: 2px solid #ffe696;
     border-radius: 10px;
-    padding: 40px;
     box-sizing: border-box;
 }
-.testimonial p img{
-    width: 30%;
-    margin: 20px;
+.testimonial-data p img{
+    width: 15%;
+    height: auto;
+    margin: 10px;
+    background-color: #fffcee;
 }
-.footer-links{
-    list-style-type: none;
-}
-.sign-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(232, 232, 232);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-.sign-box{
-    background-image: url(assets/images/healthSign_temp.webp);
-    background-size: cover;
-    height: 600px;
-    width: 600px;
-    border-radius: 30px;
-    box-shadow: 0 0 100px 1px #d2d2d2;
+@media screen and (min-width: 990px) {
+    header{
+        padding: 0;
+    }
+    .button{
+        border: 0;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+        background-color: #fff9e5;
+        width: 100%;
+    }
+    .navbar-links{
+        display: flex;
+        justify-content: right;
+        gap: 50px;
+        font-size: 1.4rem;
+        list-style-type: none;
+    }
+    .center-margin{
+        margin: 0 140px 0;
+    }
+    .sections{
+        margin: 20px 0;
+    }
+    .sections h2{
+        font-size: 48px;
+    }
+    .sections p{
+        font-size: 26px;
+    }
+    .hero {
+        padding: 100px 20px 120px;
+    }
+    .hero button{
+        font-size: 1.2rem;
+    }
+    .hero-heading{
+        padding: 80px 0 0;
+        font-size: 96px;
+    }
+    .hero-para{
+        font-size: 36px;
+        margin: 36px 0 36px;
+    }
+
+    .testimonial-data{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 40px;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .testimonial-data p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        width: 30%;
+        padding: 10px 40px 40px;
+        background-color: #fffcee;
+        border: 2px solid #ffe696;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
 }
