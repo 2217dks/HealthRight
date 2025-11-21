@@ -10,6 +10,28 @@ header{
     top: 0;
     padding: 0 0 10px;
 }
+footer{
+    padding: 20px;
+}
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.logo{
+    height: 40px;
+    padding: 20px 0px;
+}
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
 .button{
     padding: 10px 15px;
     box-sizing: border-box;
@@ -114,6 +136,7 @@ header{
     flex-grow: 1;
     margin-top: 20px;
     padding: 0 20px 20px;
+    
 }
 .testimonial-data p{
     display: flex;
@@ -126,6 +149,7 @@ header{
     border: 2px solid #ffe696;
     border-radius: 10px;
     box-sizing: border-box;
+    box-shadow: 0 0 20px -1px #ffe696;
 }
 .testimonial-data p img{
     width: 15%;
@@ -133,14 +157,14 @@ header{
     margin: 10px;
     background-color: #fffcee;
 }
-.about{
+.top{
     padding: 20px;
 }
-.about h1{
+.top h1{
     font-size: 2.5rem;
     margin: 10px 0;
 }
-.about p{
+.top p{
     font-size: 18px;
 }
 .philosophy ul{
@@ -172,6 +196,53 @@ header{
 }
 .team-flex div *{
     background-color: #fffcee;
+}
+.pricing-top{
+    text-align: center;
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+    list-style: inside;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    gap: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcee;
+    border: 2px solid #ffe696;
+    box-shadow: 0 0 20px -1px #ffe696;
+    border-radius: 10px;
+    padding: 20px;
+}
+.cards *{
+    background-color: #fffcee;
+}
+.card-top{
+    border-bottom: 1px solid #0000004f;
+    background-color: #fffcee;
+}
+.card-bottom p{
+    font-size: 22px;
+}
+.sign-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sign-box{
+    background-image: url(assets/images/Sign_temp.webp);
+    background-size: cover;
+    padding: 45vw;
+    border-radius: 30px;
+    box-shadow: 0 0 100px 1px #d2d2d2;
 }
 @media screen and (min-width: 990px) {
     header{
@@ -251,10 +322,10 @@ header{
     .philosophy li{
         font-size: 26px;
     }
-    .about h1{
+    .top h1{
         font-size: 4rem;
     }
-    .about p{
+    .top p{
         font-size: 26px;
     }
     .team-flex{
@@ -277,5 +348,48 @@ header{
         border: 2px solid #ffe696;
         border-radius: 10px;
         box-sizing: border-box;
+    }
+    .pricing{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        list-style: inside;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        gap: 20px;
+    }
+    .cards{
+        width: 100%;
+    }
+    .card-top h2{
+        font-size: 36px;
+    }
+    .card-top p{
+        font-size: 18px;
+    }
+    .card-bottom p{
+        font-size: 18px;
+    }
+    .pricing-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(232, 232, 232);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .sign-box{
+        background-image: url(assets/images/Sign_temp.webp);
+        background-size: cover;
+        padding: 30vh;
+        border-radius: 30px;
+        box-shadow: 0 0 100px 1px #d2d2d2;
     }
 }
