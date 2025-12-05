@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-    </style>
+    <div id="font-placeholder"></div>
 </head>
 <body class="sign-page">
-    <div class="sign-box"></div>
+    <div class="sign-box">
+        <div>
+            <button id="signBackBtn"><img src="assets/svgs/signBackBtn.svg"></button>
+            <h1>Sign In<br>to your <img class='signinhrlogo' src="assets/images/healthright_logo.webp"></h1>
+        </div>
+        <div>
+            <label for="phone"></label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                <button id="signBtn" class="signBtn">Sign In</button>
+            <p class="signUp">Want to Sign Up? <a id="SignUpPage" href="#">Click Here</a></p>
+            <p class="legal">By signing in you agree to our <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+    <script src="include.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
